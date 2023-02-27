@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Register from './pags/Register/Register'
+import Login from './pags/Login/Login'
+import Home from './pags/Home/Home'
+import SinglePge from './pags/SinglePage/SinglePge'
+import { useContext } from 'react'
+import { NewContex } from './useContext/UseContxt'
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const { securti, data } = useContext(NewContex)
+  console.log(securti);
+
+  const token = securti
+  if (token) {
+    return (
+      <div>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+
+          <Route index path='Home/*' element={<Home />} >
+{/* 
+          <Route index element={<Navigate to={'/Twetterbady'} />} />
+            <Route path='Twetterbady' element={<Twetterbady />} /> */}
+
+          </Route>
+
+          <Route path='/SinglePge' element={<SinglePge />} />
+        </Routes>
+      </div>
+    )
+  }
+  else {
+    return (
+      <div>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/Register' element={<Register />} />
+
+        </Routes>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App

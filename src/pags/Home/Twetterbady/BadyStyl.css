@@ -1,0 +1,57 @@
+.Header {
+    margin: 0;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+
+}
+
+.avter-text {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #828282;
+    border: none;
+}
+
+.Tweet {
+    margin-left: auto;
+    display: block;
+    padding: 16px 30px;
+    border: none;
+    background: #1DA1F2;
+    opacity: 0.4;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 120px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.IconsContent {
+    border-bottom: 1px solid #D8D8D8;
+}
+.Designsta{
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+color: #000000;
+}
+.klentsrext{
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #000000;
+}

@@ -1,0 +1,236 @@
+
+
+.sidebarLeft{
+    border-right:1px solid #E6E6E6; 
+
+   
+}
+.sidebarTile{
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+}
+
+
+.sidebarButton {
+    padding: 15px 90px;
+    background: #1D9BF0;
+    border-radius: 27.5px;
+    border: none;
+    margin-left: 50px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.profilcontent{
+    margin-top: 260px;
+}
+
+.ProfilTitle {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #000000;
+}
+.ProfilText{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #000000;
+opacity: 0.6;
+}
+/* =============== */
+.sidebarRight{
+    position:unset;
+    padding: 15px 28px;
+    border-left: 1px solid #D8D8D8;
+    height: 1000px;
+    /* =========== */
+   
+    
+}
+.inputsearch{
+    
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 60px;
+border-radius: 50%;
+    background: #EFF3F4;
+    border-radius: 31px;
+    border: none;
+}
+.searchImg{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+
+}
+.righ-content{
+    padding: 15px 20px;
+    background: #F7F9F9;
+border-radius: 10px;
+}
+.Trends{
+    margin-bottom: 20px;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+color: #000000;
+}
+.Germany{
+    margin-bottom: 2px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    
+    color: #393B41;
+    
+    opacity: 0.6;
+}
+.Revolution{
+    margin-bottom: 2px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+.Tweets{
+    margin-bottom: 15px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    
+    color: #393B41;
+    
+    opacity: 0.6;
+}
+.Show{
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+color: #1DA1F2;
+}
+
+
+.likecontent{
+    padding: 20px 15px;
+    background: #F7F9F9;
+border-radius: 10px;
+margin: 30px 0;
+
+}
+.liketite{
+    margin-bottom: 25px;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+color: #000000;
+}
+.Mushtariy{
+    margin-bottom: 0;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+}
+.Mushtariytext{
+    margin-bottom: 0;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 24px;
+color: #000000;
+opacity: 0.6;
+}
+.Follow{
+    padding: 10px 18px;
+    background: #000000;
+border-radius: 50px;
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 100%;
+color: #FFFFFF;
+}
+.mushtaryImg{
+    border-radius: 50%;
+}
+.ShuhratImg{
+    border-radius: 50%;
+
+}
+.Service{
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #536471;
+}
+.col-6{
+    border: none;
+    width: 80%;
+    aspect-ratio:100/140;
+    margin: auto;
+   
+    overflow-y: scroll;
+     scroll-padding-top: 20px;
+    scroll-behavior: auto;
+
+}
+/* ============ */
+.NoActive{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+}
+.Active{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 24px;
+color: #000000;
+/* border-bottom: 3px solid #000; */
+background-color: rgb(29, 138, 234);
+padding: 5px 100px 5px 5px;
+border-radius: 10px;
+}

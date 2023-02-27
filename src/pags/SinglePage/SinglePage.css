@@ -1,0 +1,24 @@
+
+
+.NoActive{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+}
+.Active{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 24px;
+color: #000000;
+/* border-bottom: 3px solid #000; */
+background-color: rgb(48, 124, 255);
+padding: 5px 100px 5px 5px;
+border-radius: 10px;
+}
