@@ -31,7 +31,8 @@ export default function SinglePge() {
                            <NavLink className={({isActive}) => isActive ? ((el.Text === 'Profile'?'Active':
                            'NoActive')) :
                             ('NoActive') }
-                            to={el.Text==="Profile"?'SinglePge':
+                            // el.Text==="Profile"?'SinglePge':
+                            to={
                             el.Text==="Explore"?'Explore':
                             el.Text==="Notifications"?'Notifications':
                         el.Text==="Messages"?'Messages':
