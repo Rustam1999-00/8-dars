@@ -20,12 +20,14 @@ import Kalendar2 from "../../../assets/images/Kalendar2.svg"
 import VektorButton from "../../../assets/images/VektorButton.svg"
 import ProfilImgBoady from "../../../assets/images/ProfilImgBoady.jpg"
 import Myphoto from "../../../assets/images/My-photo.jpg"
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, useParams } from 'react-router-dom'
 
 
 export const SingleBady = () => {
+    const {id}=useParams()
     const navigate = useNavigate()
     const localData= localStorage.getItem("token")
+    console.log(id);
 
     return (
         <div >
@@ -41,7 +43,7 @@ export const SingleBady = () => {
             <hr />
 
             <div className='position-relative'>
-                <img src={BgImg} width="710" height="230" alt='bg-Img' />
+                <img onClick={id} src={BgImg} width="710" height="230" alt='bg-Img' />
                 <img className='BgProfilImg' src={Myphoto} width="100" height="100" alt='avter' />
             </div>
             <button className='editButton'>Edit profile</button>

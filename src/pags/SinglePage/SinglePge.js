@@ -12,7 +12,7 @@ import shuhrat from '../../assets/images/Ellipse 5Shuhrat.jpg'
 import Myphoto from '../../assets/images/My-photo.jpg'
 import Klents from "../../assets/images/klents.jpg"
 import {SingleBady} from './SingelBady/SingleBady'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 
 
@@ -28,7 +28,17 @@ export default function SinglePge() {
                 {
                     Menu.map((el) => (
                         <li className=' d-flex align-items-center mb-4 text-center offset-3'>
-                           <NavLink className={({isActive}) => isActive ? ((el.Text === 'Profile'?'Active':'NoActive')) : ('NoActive') }to={el.Text==="Profile"?'/SinglePge':'/'}>
+                           <NavLink className={({isActive}) => isActive ? ((el.Text === 'Profile'?'Active':
+                           'NoActive')) :
+                            ('NoActive') }
+                            to={el.Text==="Profile"?'SinglePge':
+                            el.Text==="Explore"?'Explore':
+                            el.Text==="Notifications"?'Notifications':
+                        el.Text==="Messages"?'Messages':
+                        el.Text==="Bookmarks"?'Bookmarks':
+                        el.Text==="Lists"?'Lists':
+                        el.Text==="More"?'More':'/'
+                        }>
                            <img className='' src={el.Img} width="25" height='23' alt='NavbarImg' />
                             <h5 className='d-inline mb-0 ms-3 sidebarTitle'>{el.Text}</h5>
                            </NavLink>
@@ -51,7 +61,8 @@ export default function SinglePge() {
         </div>
         <div className='col-6  offset-3 p-0 '>
 
-           <SingleBady/>
+           {/* <SingleBady/> */}
+           <Outlet/>
            
         </div>
         <div className='col-3  sidebarRight'>

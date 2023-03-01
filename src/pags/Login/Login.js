@@ -3,6 +3,7 @@ import TweterLogo from '../../assets/images/twitter-logo-4 1.svg'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { NewContex } from '../../useContext/UseContxt'
+import axios from 'axios'
 
 export default function Login() {
   const {setDate}=useContext(NewContex)
@@ -16,6 +17,18 @@ export default function Login() {
   evt.preventDefault()
   localStorage.setItem('tokens',InutPossword.current.value)
   setDate(localStorage.getItem('tokens'))
+// const post =()=>{
+//   axios.post('https://todo-for-n92.cyclic.app/user/login',{
+//     username:Inutphone.current.value,
+//     Password:InutPossword.current.value
+//   },{
+//     "Content-Type":"application/json"
+//   }
+//   )
+//   .then((data)=>console.log(data)).catch((err)=>console.log(err))
+// }
+
+// post()
 
 
   

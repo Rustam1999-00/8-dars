@@ -11,6 +11,7 @@ import Myphoto from '../../assets/images/My-photo.jpg'
 import { Twetterbady } from './Twetterbady/Twetterbady'
 
 import { NavLink, Outlet } from 'react-router-dom'
+// import HomeBady from './HomeBady/HomeBady'
 
 
 export default function Home() {
@@ -24,7 +25,15 @@ export default function Home() {
                     {
                         Menu.map((el) => (
                             <li className=' d-flex align-items-center mb-4 text-center offset-3'>
-                            <NavLink className={({isActive}) => isActive ? ((el.Text ==='Home'?'Active':'NoActive')) : ('NoActive') }to={el.Text==="Home"?'/':el.Text==="Profile"?'SinglePge':''}>
+                            <NavLink className={({isActive}) => isActive ? ((el.Text ==='Home'?'Active':'NoActive')) : ('NoActive') }
+                            to={el.Text==="Home"?'/':
+                            el.Text==="Profile"?'/SinglePge':
+                            el.Text==="Explore"?'Explore':
+                            el.Text==="Notifications"?'Notifications':
+                            el.Text==="Messages"?'Messages':
+                            el.Text==="Bookmarks"?'Bookmarks':
+                            el.Text==="Lists"?'Lists':
+                            el.Text==="More"?'More':'/'}>
                              <img src={el.Img} width="25" height='23' alt='NavbarImg' />
                                 <h5 className='d-inline mb-0 ms-3 sidebarTitle'>{el.Text}</h5>
                                 </NavLink>
@@ -52,6 +61,7 @@ export default function Home() {
 
               
                 <Twetterbady/>
+                {/* <HomeBady/> */}
                 <Outlet/>
                
             </div>
